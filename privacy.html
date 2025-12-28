@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JacketCast — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the JacketCast app." />
+  <style>
+    :root { --bg:#0b1220; --card:#111b2e; --text:#eaf0ff; --muted:#b9c6e8; --link:#71d4ff; --border:#223152; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background:linear-gradient(180deg,#081022, #0b1220); color:var(--text); }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 40px 18px 70px; }
+    .card { background: rgba(17,27,46,.9); border: 1px solid var(--border); border-radius: 16px; padding: 18px; margin: 14px 0; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+    h1 { font-size: 30px; margin: 0 0 8px; }
+    h2 { font-size: 18px; margin: 18px 0 8px; }
+    p, li { color: var(--muted); line-height: 1.55; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { background: #0a142a; padding: 2px 6px; border-radius: 8px; border: 1px solid var(--border); color: var(--text); }
+    .toplinks { margin-top: 8px; }
+    .toplinks a { margin-right: 12px; }
+    .small { font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <p class="small">Last updated: <span id="d"></span></p>
+      <div class="toplinks">
+        <a href="./index.html">Support</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Summary</h2>
+      <ul>
+        <li>JacketCast does not require you to create an account.</li>
+        <li>Weather lookup may use your device location if you grant permission.</li>
+        <li>The app may show ads through third-party ad providers (free tier).</li>
+        <li>In-app purchases are processed by Apple (StoreKit).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Information JacketCast uses</h2>
+      <ul>
+        <li><strong>Location (optional):</strong> If you allow location access, JacketCast uses it to fetch weather for your area. You can deny or revoke location permission at any time in iOS Settings.</li>
+        <li><strong>App settings:</strong> Your thresholds and preferences (e.g., decision window, reminder settings) are stored locally on your device. If the app uses an App Group for widgets, those settings may also be stored locally in the shared container on your device.</li>
+        <li><strong>Purchase status:</strong> The app stores whether the paid tier is active to enable features such as ad removal. Purchases are handled by Apple.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Third-party services</h2>
+      <p>JacketCast may use third-party services to provide core functionality:</p>
+      <ul>
+        <li><strong>Advertising (free tier):</strong> Ads may be served by Google Mobile Ads (AdMob) or similar providers. These providers may collect information such as device identifiers, approximate location, and interaction data to measure ad performance and prevent fraud, subject to your device settings and their policies.</li>
+        <li><strong>Apple StoreKit:</strong> In-app purchases and subscription management are handled by Apple.</li>
+        <li><strong>Weather data providers:</strong> JacketCast requests forecast data from weather APIs to compute recommendations.</li>
+      </ul>
+      <p class="small">Note: Third-party providers handle their own data practices. Your use of those services is governed by their policies.</p>
+    </div>
+
+    <div class="card">
+      <h2>Tracking and personalized ads</h2>
+      <p>JacketCast may show non-personalized ads by default. If personalized ads are enabled, iOS may show an App Tracking Transparency prompt. You can control tracking and ad personalization in iOS settings.</p>
+    </div>
+
+    <div class="card">
+      <h2>Data sharing</h2>
+      <p>JacketCast does not sell your personal information. The app may share limited information with third parties only to provide ads, purchases, and app functionality as described above.</p>
+    </div>
+
+    <div class="card">
+      <h2>Data retention</h2>
+      <p>App preferences are stored locally on your device. JacketCast does not operate a user account system and does not maintain an app-specific server-side profile of you.</p>
+    </div>
+
+    <div class="card">
+      <h2>Your choices</h2>
+      <ul>
+        <li><strong>Location:</strong> Manage in <code>Settings → Privacy &amp; Security → Location Services</code></li>
+        <li><strong>Notifications:</strong> Manage in <code>Settings → Notifications → JacketCast</code></li>
+        <li><strong>Tracking:</strong> Manage in <code>Settings → Privacy &amp; Security → Tracking</code></li>
+        <li><strong>Purchases:</strong> Manage subscriptions in iOS <code>Settings → Apple ID → Subscriptions</code></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>If you have questions about privacy, contact: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+    </div>
+
+    <div class="card small">
+      <p>This policy may be updated from time to time. Material changes will be reflected on this page by updating the “Last updated” date.</p>
+    </div>
+  </div>
+
+  <script>
+    const now = new Date();
+    const fmt = now.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+    document.getElementById("d").textContent = fmt;
+  </script>
+</body>
+</html>
