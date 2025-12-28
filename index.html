@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JacketCast — Support</title>
+  <meta name="description" content="JacketCast Support — contact, FAQ, and troubleshooting." />
+  <style>
+    :root { --bg:#0b1220; --card:#111b2e; --text:#eaf0ff; --muted:#b9c6e8; --link:#71d4ff; --border:#223152; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background:linear-gradient(180deg,#081022, #0b1220); color:var(--text); }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 40px 18px 70px; }
+    .card { background: rgba(17,27,46,.9); border: 1px solid var(--border); border-radius: 16px; padding: 18px; margin: 14px 0; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+    h1 { font-size: 34px; margin: 0 0 8px; letter-spacing: .2px; }
+    h2 { font-size: 18px; margin: 18px 0 8px; }
+    p, li { color: var(--muted); line-height: 1.55; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { background: #0a142a; padding: 2px 6px; border-radius: 8px; border: 1px solid var(--border); color: var(--text); }
+    .pill { display:inline-block; font-size:12px; padding: 6px 10px; border-radius: 999px; border:1px solid var(--border); color: var(--muted); margin-right: 8px; }
+    .footer { margin-top: 28px; font-size: 13px; color: var(--muted); }
+    .grid { display:grid; grid-template-columns: 1fr; gap: 12px; }
+    @media (min-width: 780px){ .grid{ grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <span class="pill">Support</span>
+      <span class="pill">iOS</span>
+      <h1>JacketCast</h1>
+      <p>JacketCast recommends whether you should wear a jacket based on near-term weather conditions, using your selected thresholds and (optionally) wind and precipitation.</p>
+      <p><strong>Contact:</strong> <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+      <p><a href="./privacy.html">Privacy Policy</a></p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>FAQ</h2>
+        <ul>
+          <li><strong>How does JacketCast decide?</strong><br>
+            It compares forecast conditions against your settings (temperature, and optionally wind/rain). The decision is based on a short rolling time window so it can account for changes soon after you leave.</li>
+          <li><strong>Why do I need Location?</strong><br>
+            Location is used to fetch weather for your current area. You can disable Location and use a saved location if available in your version.</li>
+          <li><strong>Can I turn off ads?</strong><br>
+            Yes — the paid tier removes ads.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Troubleshooting</h2>
+        <ul>
+          <li><strong>Weather won’t load</strong><br>
+            Check cellular/Wi-Fi, then try force quitting and reopening the app.</li>
+          <li><strong>Notifications not arriving</strong><br>
+            Go to <code>Settings → Notifications → JacketCast</code> and enable notifications. Also confirm reminders are enabled inside the app.</li>
+          <li><strong>Restore purchase</strong><br>
+            In the app’s Settings, tap <em>Restore Purchase</em>. If it still doesn’t restore, email support with your device type and iOS version.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Version info</h2>
+      <p>If you contact support, include:</p>
+      <ul>
+        <li>Device model</li>
+        <li>iOS version</li>
+        <li>App version</li>
+        <li>What you expected vs what happened</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      © <span id="y"></span> JacketCast. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
