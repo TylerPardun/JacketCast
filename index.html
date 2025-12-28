@@ -1,82 +1,132 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>JacketCast — Support</title>
-  <meta name="description" content="JacketCast Support — contact, FAQ, and troubleshooting." />
-  <style>
-    :root { --bg:#0b1220; --card:#111b2e; --text:#eaf0ff; --muted:#b9c6e8; --link:#71d4ff; --border:#223152; }
-    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background:linear-gradient(180deg,#081022, #0b1220); color:var(--text); }
-    .wrap { max-width: 860px; margin: 0 auto; padding: 40px 18px 70px; }
-    .card { background: rgba(17,27,46,.9); border: 1px solid var(--border); border-radius: 16px; padding: 18px; margin: 14px 0; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
-    h1 { font-size: 34px; margin: 0 0 8px; letter-spacing: .2px; }
-    h2 { font-size: 18px; margin: 18px 0 8px; }
-    p, li { color: var(--muted); line-height: 1.55; }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    code { background: #0a142a; padding: 2px 6px; border-radius: 8px; border: 1px solid var(--border); color: var(--text); }
-    .pill { display:inline-block; font-size:12px; padding: 6px 10px; border-radius: 999px; border:1px solid var(--border); color: var(--muted); margin-right: 8px; }
-    .footer { margin-top: 28px; font-size: 13px; color: var(--muted); }
-    .grid { display:grid; grid-template-columns: 1fr; gap: 12px; }
-    @media (min-width: 780px){ .grid{ grid-template-columns: 1fr 1fr; } }
-  </style>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<meta name="theme-color" content="#0b1220">
+
+<title>JacketCast — Wear a jacket or leave it at home.</title>
+<meta name="description" content="JacketCast gives you a clear yes/no jacket recommendation based on near-term weather. Custom thresholds. Multiple locations. One-time upgrade." />
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./script.js"></script>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <span class="pill">Support</span>
-      <span class="pill">iOS</span>
-      <h1>JacketCast</h1>
-      <p>JacketCast recommends whether you should wear a jacket based on near-term weather conditions, using your selected thresholds and (optionally) wind and precipitation.</p>
-      <p><strong>Contact:</strong> <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
-      <p><a href="./privacy.html">Privacy Policy</a></p>
+<div class="nav"><div class="nav-inner">
+  <div class="brand">
+<svg viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8.2 7.4c0-1.6 1.3-2.8 2.9-2.8h1.8c1.6 0 2.9 1.2 2.9 2.8v1.2c0 1.7-1.4 3.1-3.1 3.1H11.3c-1.7 0-3.1-1.4-3.1-3.1V7.4z" stroke="url(#grad)" stroke-width="1.6"/>
+  <path d="M6.2 9.8 3.5 12v5.6c0 1.6 1.3 2.9 2.9 2.9h11.2c1.6 0 2.9-1.3 2.9-2.9V12l-2.7-2.2" stroke="#EAF0FF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M9.2 17.2h5.6" stroke="#EAF0FF" stroke-width="1.8" stroke-linecap="round"/>
+  <defs><linearGradient id="grad" x1="5" y1="5" x2="19" y2="19" gradientUnits="userSpaceOnUse"><stop stop-color="#0EA5E9"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient></defs>
+</svg>
+<span>JacketCast</span></div>
+  <div class="nav-links"><a href="#features">Features</a><a href="#screens">Screens</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
+  <div class="nav-cta"><a class="btn ghost" href="./support.html">Support</a><a class="btn primary" href="#pricing" onclick="event.preventDefault(); scrollToId('pricing');">Upgrade</a></div>
+</div></div>
+
+<main class="container">
+<section class="hero">
+  <div>
+    <span class="badge">No clutter • No account • Fast</span>
+    <h1 class="h-title">A clean, confident answer to <span style="background:linear-gradient(135deg,rgba(14,165,233,.9),rgba(45,212,191,.9));-webkit-background-clip:text;background-clip:text;color:transparent;">“Do I need a jacket?”</span></h1>
+    <p class="h-sub">JacketCast turns the forecast into a simple recommendation — with your thresholds, your locations, and optional wind/rain logic. Check once and go.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#pricing" onclick="event.preventDefault(); scrollToId('pricing');">
+<svg viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8.2 7.4c0-1.6 1.3-2.8 2.9-2.8h1.8c1.6 0 2.9 1.2 2.9 2.8v1.2c0 1.7-1.4 3.1-3.1 3.1H11.3c-1.7 0-3.1-1.4-3.1-3.1V7.4z" stroke="url(#grad)" stroke-width="1.6"/>
+  <path d="M6.2 9.8 3.5 12v5.6c0 1.6 1.3 2.9 2.9 2.9h11.2c1.6 0 2.9-1.3 2.9-2.9V12l-2.7-2.2" stroke="#EAF0FF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M9.2 17.2h5.6" stroke="#EAF0FF" stroke-width="1.8" stroke-linecap="round"/>
+  <defs><linearGradient id="grad" x1="5" y1="5" x2="19" y2="19" gradientUnits="userSpaceOnUse"><stop stop-color="#0EA5E9"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient></defs>
+</svg>
+ One-time upgrade $2.99</a>
+      <a class="btn" href="mailto:contact.jacketcast@gmail.com">Email support</a>
     </div>
-
-    <div class="grid">
-      <div class="card">
-        <h2>FAQ</h2>
-        <ul>
-          <li><strong>How does JacketCast decide?</strong><br>
-            It compares forecast conditions against your settings (temperature, and optionally wind/rain). The decision is based on a short rolling time window so it can account for changes soon after you leave.</li>
-          <li><strong>Why do I need Location?</strong><br>
-            Location is used to fetch weather for your current area. You can disable Location and use a saved location if available in your version.</li>
-          <li><strong>Can I turn off ads?</strong><br>
-            Yes — the paid tier removes ads.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>Troubleshooting</h2>
-        <ul>
-          <li><strong>Weather won’t load</strong><br>
-            Check cellular/Wi-Fi, then try force quitting and reopening the app.</li>
-          <li><strong>Notifications not arriving</strong><br>
-            Go to <code>Settings → Notifications → JacketCast</code> and enable notifications. Also confirm reminders are enabled inside the app.</li>
-          <li><strong>Restore purchase</strong><br>
-            In the app’s Settings, tap <em>Restore Purchase</em>. If it still doesn’t restore, email support with your device type and iOS version.</li>
-        </ul>
-      </div>
+    <div class="hero-meta">
+      <div class="kpi"><strong>1 tap</strong><span>to recheck conditions</span></div>
+      <div class="kpi"><strong>Multiple places</strong><span>save favorites &amp; switch fast</span></div>
+      <div class="kpi"><strong>Plus unlock</strong><span>ad-free + all features</span></div>
     </div>
+    <p class="note" style="margin-top:14px;">App Store link coming soon. For Apple requirements, see <a href="./privacy.html">Privacy Policy</a> and <a href="./support.html">Support</a>.</p>
+  </div>
+  <div class="phone" aria-hidden="true"><img src="./assets/img/sc1.png" alt="JacketCast main screen" loading="lazy" /></div>
+</section>
 
-    <div class="card">
-      <h2>Version info</h2>
-      <p>If you contact support, include:</p>
-      <ul>
-        <li>Device model</li>
-        <li>iOS version</li>
-        <li>App version</li>
-        <li>What you expected vs what happened</li>
+<section class="section" id="features">
+  <h2>Built for people who hate scrolling weather apps</h2>
+  <p class="lead">JacketCast is intentionally narrow: give a jacket recommendation that feels correct, explain it briefly, and let you move on.</p>
+  <div class="grid">
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round"/><path d="M7 8l5-5 5 5" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Instant yes/no</h3><p>One card gives the call — with a short explanation.</p></div>
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round"/><path d="M7 12l2-8h6l2 8" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Feels-like aware</h3><p>Uses “feels like” so the recommendation matches what you experience.</p></div>
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-4.5 7-10a7 7 0 1 0-14 0c0 5.5 7 10 7 10z" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="#EAF0FF"/></svg></div><h3>Saved locations</h3><p>Keep favorite places and switch fast — no retyping.</p></div>
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14c2-3 6-6 10-6s6 3 6 3" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round"/><path d="M6 18c2-2 5-4 8-4 3 0 4 1 4 1" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Wind and rain logic</h3><p>Optional decision factors so you can bias toward comfort.</p></div>
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6v6l4 2" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke="#EAF0FF" stroke-width="2"/></svg></div><h3>Near-term outlook</h3><p>Quick glance at the next hours so you’re not surprised later.</p></div>
+    <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M7 7h10v10H7z" stroke="#EAF0FF" stroke-width="2"/><path d="M4 10V4h6" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round"/><path d="M20 14v6h-6" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Widgets + themes</h3><p>Plus unlocks ad-free and customization for a cleaner everyday experience.</p></div>
+  </div>
+</section>
+
+<section class="section" id="screens">
+  <h2>Screenshots</h2>
+  <p class="lead">A quick look at JacketCast in dark and light themes.</p>
+  <div class="screens">
+    <div class="screen"><img src="./assets/img/sc1.png" alt="Main screen dark theme" loading="lazy" /></div>
+    <div class="screen"><img src="./assets/img/sc2.png" alt="Settings screen dark theme" loading="lazy" /></div>
+    <div class="screen"><img src="./assets/img/sc3.png" alt="Main screen light theme" loading="lazy" /></div>
+    <div class="screen"><img src="./assets/img/sc4.png" alt="Main screen light theme alternate" loading="lazy" /></div>
+    <div class="screen"><img src="./assets/img/sc5.png" alt="Settings screen light theme" loading="lazy" /></div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <h2>One-time upgrade. Keep it forever.</h2>
+  <p class="lead">No subscriptions. Upgrade once to unlock everything and keep the app clean.</p>
+  <div class="pricing">
+    <div class="price-card">
+      <span class="badge">JacketCast Plus</span>
+      <div class="price"><div class="big">$2.99</div><div class="small">one-time</div></div>
+      <ul class="list">
+        <li><span class="check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Remove ads</li>
+        <li><span class="check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Unlock all decision inputs (wind + rain)</li>
+        <li><span class="check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Customization and widget options</li>
+        <li><span class="check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#EAF0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Future paid features included</li>
       </ul>
+      <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn primary" href="#" onclick="event.preventDefault(); alert('App Store link coming soon.');">Get JacketCast Plus</a>
+        <a class="btn" href="./support.html#restore">Restore purchase</a>
+      </div>
+      <p class="note" style="margin-top:10px;">Replace the button with your App Store link once the listing is live.</p>
     </div>
-
-    <div class="footer">
-      © <span id="y"></span> JacketCast. All rights reserved.
+    <div class="card">
+      <h3>Free tier</h3>
+      <p>Perfect for quick checks — still clean and useful.</p>
+      <ul class="list" style="margin-top:12px;">
+        <li><span class="check" style="border-color:rgba(34,49,82,.7);background:rgba(16,31,56,.3)"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#B9C6E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Core yes/no recommendation</li>
+        <li><span class="check" style="border-color:rgba(34,49,82,.7);background:rgba(16,31,56,.3)"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#B9C6E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Basic thresholds and settings</li>
+        <li><span class="check" style="border-color:rgba(34,49,82,.7);background:rgba(16,31,56,.3)"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#B9C6E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Limited saved locations</li>
+      </ul>
+      <p class="note" style="margin-top:12px;">Free includes ads. Upgrade once to remove them and unlock everything.</p>
     </div>
   </div>
+</section>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+<section class="section faq" id="faq">
+  <h2>FAQ</h2>
+  <p class="lead">Short answers to the stuff Apple reviewers and users will ask.</p>
+  <details><summary>Does JacketCast need my location?</summary><p>Location is optional, but recommended. If you allow it, JacketCast uses your location to fetch the forecast for your current area. You can revoke location access anytime in iOS Settings.</p></details>
+  <details><summary>How does the recommendation work?</summary><p>JacketCast compares near-term forecast conditions against your thresholds. Adjust temperature and sensitivity settings to match how you personally experience “jacket weather.”</p></details>
+  <details><summary>Is JacketCast Plus a subscription?</summary><p>No. It’s a $2.99 one-time purchase.</p></details>
+  <details><summary>How do I restore my purchase?</summary><p>Go to <a href="./support.html#restore">Support → Restore Purchase</a>. Apple may require you to be signed into the same Apple ID used to purchase.</p></details>
+  <details><summary>What data do you collect?</summary><p>JacketCast does not require accounts. App preferences live on-device. Ads may involve third-party providers (free tier). See the <a href="./privacy.html">Privacy Policy</a> for details.</p></details>
+</section>
+
+<footer class="footer">
+  <div>© <span id="y"></span> JacketCast</div>
+  <div><a href="./privacy.html">Privacy</a> • <a href="./support.html">Support</a> • <a href="mailto:contact.jacketcast@gmail.com">contact.jacketcast@gmail.com</a></div>
+</footer>
+</main>
+
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
 </body>
 </html>
